@@ -39,6 +39,17 @@ public class Passport {
     }
 
     @Override
+    public String toString() {
+        return "Passport{" +
+                "numberOfID=" + numberOfID +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", patronymic='" + patronymic + '\'' +
+                ", localDate=" + localDate +
+                '}';
+    }
+
+    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
@@ -51,3 +62,4 @@ public class Passport {
         return Objects.hash(numberOfID);
     }
 }
+
